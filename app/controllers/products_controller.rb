@@ -4,6 +4,6 @@ class ProductsController < ApplicationController
 
   def add
     @product = params[:product]
-    cart << @product.id
+    cart << @product
   end
 end
