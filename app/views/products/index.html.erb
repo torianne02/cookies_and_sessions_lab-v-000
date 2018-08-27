@@ -5,3 +5,13 @@
       <li><%= product %></li>
     <% end %>
 </ul>
+
+
+<h2>Add new product to cart</h2>
+
+<%= form_tag('/') do %>
+  <label>Product:</label>
+    <%= text_field_tag :'product' %><br>
+  <%= submit_tag "Add to Cart" %>
+<% end %>
+  
